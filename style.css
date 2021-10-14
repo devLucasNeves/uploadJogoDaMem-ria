@@ -85,3 +85,57 @@ font-weight: bolder;
     gap: 20px;
     
 }
+
+@media screen and (max-width: 480px) {
+        body{
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background-color: rgb(219, 219, 219); 
+    }
+        .card{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+        #gameBoard{
+        max-width: 700px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+        gap: 10px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+    body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgb(219, 219, 219); 
+}
+    .card{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+    #gameBoard{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    
+}
+
+}
